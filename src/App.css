@@ -1,4 +1,4 @@
-.App {
+/* .App {
   text-align: center;
 }
 
@@ -12,7 +12,232 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+} */
+
+/* NavBar and NestedNavBar */
+
+.header { background: linear-gradient(to top, rgb(0, 0, 0), rgb(53, 53, 53));
+   position: sticky;
+   top: 0;
+  z-index: 2;
+  overflow: hidden;
+   display: table;
+
+}
+
+
+.title {
+  font-size: 50px;
+  color: white;
+  margin-left: 900px;
+  z-index: 2;
+ display: inline-block;
+}
+.movie-form-button {
+  margin-right: 24px;
+  margin-left: 15px;
+  color: white;
+  font-size: 100px;
+  background: none;
+  border: 0;
+  cursor: pointer;
+}
+
+.close-movie-form {
+  margin-right: 24px;
+  margin-left: 15px;
+  color: white;
+  font-size: 100px;
+  background: none;
+  border: 0;
+  cursor: pointer;
+
+
+}
+/*the nav shelf*/
+
+
+.shelf-container{
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.nav-button {
+  background: linear-gradient(to top, rgb(0, 0, 0), rgb(53, 53, 53));
+}
+.mantine-1k155ir{background: linear-gradient(to top, rgb(0, 0, 0), rgb(53, 53, 53));}
+.mantine-jko4bx {
+background: linear-gradient(to top, rgb(0, 0, 0), rgb(53, 53, 53));
+}
+
+.shelf {
+  background: none;
+  width: 261px;
+  height: 267px;
+  
+  margin-top: 39px;
+  display: grid;
+  align-items: end;
+  align-content: space-between;
+
+
+}
+
+.close-shelf{
+  position: absolute;
+  right: 50px;
+  top: 15px;
+  color: white;
+  font-size: 50px;
+  cursor: pointer;
+
+}
+
+/*this if for the video and overall app*/
+
+body {
+  background-color: rgb(0, 0, 0);
+}
+
+.video-name {
+  margin-top: 116px;
+  font-size: 45px;
+  font-family: 'Inconsolata', monospace;
+  color: white;
+  width: 500px;
+  margin-left: 125px;
+  margin-right: 25px;
+
+}
+
+.video-container {
+  display: flex;
+
+}
+
+.staffPick-img {
+  margin-left: 100px;
+height: 459px;
+    width: 600px;
+}
+
+.home-banner {
+  margin-top: -115px;
+}
+
+/* For the scroll bar  */
+
+
+
+
+body {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 
 
+
+.number-slide2 {
+  
+
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    128deg,
+    rgb(0, 0, 0) 0%,
+    rgb(0, 0, 0) 100%
+  );
+}
+
+.number-slide3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 50px;
+  color: rgb(255, 255, 255);
+
+  background-color: #000;
+ 
+  
+}
+
+.number-slide4 {
+height: auto;
+width: auto;
+}
+
+.number-slide5 {
+  background: rgb(255, 64, 156);
+  background: linear-gradient(
+    128deg,
+    rgba(255, 64, 156, 1) 0%,
+    rgba(255, 63, 63, 1) 100%
+  );
+}
+.number-slide6 {
+  background: rgb(64, 76, 255);
+  background: linear-gradient(
+    128deg,
+    rgba(64, 76, 255, 1) 0%,
+    rgba(174, 63, 255, 1) 100%
+  );
+}
+
+.navigation-wrapper {
+  position: relative;
+}
+
+.dots {
+  display: flex;
+  padding: 10px 0;
+  justify-content: center;
+}
+
+.dot {
+  border: none;
+  width: 10px;
+  height: 10px;
+  background: #c5c5c5;
+  border-radius: 50%;
+  margin: 0 5px;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.dot:focus {
+  outline: none;
+}
+
+.dot.active {
+  background: #000;
+}
+
+.arrow {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  fill: rgb(255, 255, 255);
+  cursor: pointer;
+}
+
+.arrow--left {
+  left: 5px;
+}
+
+.arrow--right {
+  left: auto;
+  right: 5px;
+}
+
+.arrow--disabled {
+  fill: rgba(255, 255, 255, 0.5);
+}
