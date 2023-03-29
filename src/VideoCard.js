@@ -6,7 +6,7 @@ import React from 'react'
 function VideoCard({video}) {
     const snip = video.snippet
     const vid = video.snippet.resourceId.videoId
-    const thumbnail = video.snippet.thumbnails.standard.url
+    // const thumbnail = video.snippet.thumbnails.standard.url
     const vidSrc = `https://www.youtube.com/embed/${vid}`
 
     // console.log(video.id)

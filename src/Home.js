@@ -9,8 +9,9 @@ export default () => {
 
 const [video, setVideo] = useState([]) 
 
+
 useEffect(() => {
-  fetch ("")
+  fetch (`https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&key=${process.env.REACT_APP_API_KEY}&playlistId=PLnuPM0B9haimXRxjAXuewZprKSGH5VzSV&maxResults=20`)
   .then ((r) => r.json())
   .then ((video)=> setVideo(video.items))
 
